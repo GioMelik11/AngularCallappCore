@@ -76,29 +76,28 @@ i {
   transition: .4s;
 }
 
-#menuArea {
-  position: absolute;
-  top: 55px;
-  right: 0px;
-  transition: 0.4s;
-  height: 0px;
-  border-radius: 4px;
-}
-
-#notificationArea {
-  position: absolute;
-  top: 55px;
-  right: 40%;
-  transition: 0.4s;
-  height: 0px;
-  border-radius: 4px;
-}
-
+#notificationArea,
+#menuArea,
 #chatArea {
   position: absolute;
   top: 55px;
-  right: 60%;
   transition: 0.4s;
   height: 0px;
   border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+#menuArea {
+  right: 0px;
+}
+
+#notificationArea {
+
+  right: 14%;
+}
+
+#chatArea {
+  right: 18%;
 }

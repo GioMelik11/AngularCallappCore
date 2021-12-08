@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
@@ -12,6 +13,7 @@ export class HeaderComponent implements OnInit {
   @ViewChild('menuAreaContent', { static: true }) menuArea: ElementRef<HTMLDivElement>;
   @ViewChild('notificationAreaContent', { static: true }) notificationArea: ElementRef<HTMLDivElement>;
   @ViewChild('chatAreaContent', { static: true }) chatArea: ElementRef<HTMLDivElement>;
+  contentStyle: any = new Object();
 
   constructor(dropdown: ElementRef<HTMLElement>, divElement: ElementRef<HTMLDivElement>) {
     this.dropdownChange = dropdown;
@@ -26,27 +28,44 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  ShowHideMenu() {
+    this.contentStyle.width = "210px";
+    this.contentStyle.height = "220px";
+    this.menuArea.nativeElement.getAttribute("aria-dropdown") == "false" ? this.DropDownRotate(this.menuArea.nativeElement, "show") : this.DropDownRotate(this.menuArea.nativeElement, "hide");
+    this.hideDropDown(this.chatArea.nativeElement);
+    this.hideDropDown(this.notificationArea.nativeElement);
+  }
+
+  ShowHideNotification() {
+    this.contentStyle.width = "355px";
+    this.contentStyle.height = "700px";
+    this.notificationArea.nativeElement.getAttribute("aria-dropdown") == "false" ? this.createContent(this.notificationArea.nativeElement, this.CreateInsideContent()) : this.hideDropDown(this.notificationArea.nativeElement);
+    this.hideDropDown(this.menuArea.nativeElement);
+    this.hideDropDown(this.chatArea.nativeElement);
+    this.dropdownChange.nativeElement.setAttribute("aria-dropdown", "false");
+    this.dropdownChange.nativeElement.style.transform = "rotate(0deg)";
+  }
+
+  ShowHideChat() {
+    this.contentStyle.width = "436px";
+    this.contentStyle.height = "434px"
+    this.chatArea.nativeElement.getAttribute("aria-dropdown") == "false" ? this.createContent(this.chatArea.nativeElement, this.CreateInsideContent()) : this.hideDropDown(this.chatArea.nativeElement);
+    this.hideDropDown(this.menuArea.nativeElement);
+    this.hideDropDown(this.notificationArea.nativeElement);
+    this.dropdownChange.nativeElement.setAttribute("aria-dropdown", "false");
+    this.dropdownChange.nativeElement.style.transform = "rotate(0deg)";
+  }
+
   dropdownMenu(type: any) {
     switch (type) {
       case 1:
-        this.menuArea.nativeElement.getAttribute("aria-dropdown") == "false" ? this.DropDownRotate(this.menuArea.nativeElement, "show") : this.DropDownRotate(this.menuArea.nativeElement, "hide");
-        this.hideDropDown(this.chatArea.nativeElement);
-        this.hideDropDown(this.notificationArea.nativeElement);
-
+        this.ShowHideMenu();
         break;
       case 2:
-        this.notificationArea.nativeElement.getAttribute("aria-dropdown") == "false" ? this.createContent(this.notificationArea.nativeElement) : this.hideDropDown(this.notificationArea.nativeElement);
-        this.hideDropDown(this.menuArea.nativeElement);
-        this.hideDropDown(this.chatArea.nativeElement);
-        this.dropdownChange.nativeElement.setAttribute("aria-dropdown", "false");
-        this.dropdownChange.nativeElement.style.transform = "rotate(0deg)";
+        this.ShowHideNotification();
         break;
       case 3:
-        this.chatArea.nativeElement.getAttribute("aria-dropdown") == "false" ? this.createContent(this.chatArea.nativeElement) : this.hideDropDown(this.chatArea.nativeElement);
-        this.hideDropDown(this.menuArea.nativeElement);
-        this.hideDropDown(this.notificationArea.nativeElement);
-        this.dropdownChange.nativeElement.setAttribute("aria-dropdown", "false");
-        this.dropdownChange.nativeElement.style.transform = "rotate(0deg)";
+        this.ShowHideChat();
         break;
       default:
         break;
@@ -54,12 +73,16 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  CreateInsideContent() {
+    return "no data";
+  }
+
   DropDownRotate(el: HTMLDivElement, check: string) {
     switch (check) {
       case "show":
         this.dropdownChange.nativeElement.setAttribute("aria-dropdown", "true");
         this.dropdownChange.nativeElement.style.transform = "rotate(180deg)";
-        this.createContent(el);
+        this.createContent(el, this.CreateInsideContent());
         break;
       case "hide":
         this.dropdownChange.nativeElement.setAttribute("aria-dropdown", "false");
@@ -77,12 +100,13 @@ export class HeaderComponent implements OnInit {
     el.setAttribute("aria-dropdown", "false");
   }
 
-  createContent(el: HTMLDivElement) {
+  createContent(el: HTMLDivElement, Content: any) {
     el.setAttribute("aria-dropdown", "true");
     el.style.background = "#fff";
-    el.style.width = "210px";
-    el.style.height = "220px";
+    el.style.width = this.contentStyle.width;
+    el.style.height = this.contentStyle.height;
     el.style.filter = "drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.08))";
+    el.innerHTML = Content;
   }
 
 }
