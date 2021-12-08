@@ -4,13 +4,13 @@
         <div class="d-flex">
                 <i class="far fa-paper-plane"></i>
                 <i class="far fa-bell"></i>
-                <section id="profile">
+                <section id="profile" (click)="dropdownMenu()">
                     <section id="profileDetail">
                         <span id="name">ადმინისტრატორი</span>
                         <span id="group">ადმინისტრატორი</span>
                     </section>
                     <img src="../../assets/images/no-image.png" alt="">
-                    <i class="fas fa-chevron-down"></i>
+                    <i aria-dropdown="false" #dropdownChange class="fas fa-chevron-down"></i>
                 </section>
         </div>
     </div>
