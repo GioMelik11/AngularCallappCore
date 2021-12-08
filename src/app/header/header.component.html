@@ -2,16 +2,19 @@
     <div class="container-fluid">
         <a class="navbar-brand"><p id="logo"></p></a>
         <div class="d-flex">
-                <i class="far fa-paper-plane"></i>
-                <i class="far fa-bell"></i>
-                <section id="profile" (click)="dropdownMenu()">
+                <i class="far fa-paper-plane" #dropdownNotif (click)="dropdownMenu(3)"></i>
+                <i class="far fa-bell" #dropdownChat (click)="dropdownMenu(2)"></i>
+                <section id="profile" (click)="dropdownMenu(1)">
                     <section id="profileDetail">
                         <span id="name">ადმინისტრატორი</span>
                         <span id="group">ადმინისტრატორი</span>
                     </section>
                     <img src="../../assets/images/no-image.png" alt="">
-                    <i aria-dropdown="false" #dropdownChange class="fas fa-chevron-down"></i>
+                    <i #dropdownChange class="fas fa-chevron-down"></i>
                 </section>
+                <section id="menuArea" aria-dropdown="false" #menuAreaContent></section>
+                <section id="notificationArea" aria-dropdown="false" #notificationAreaContent></section>
+                <section id="chatArea" aria-dropdown="false" #chatAreaContent></section>
         </div>
     </div>
 </nav>

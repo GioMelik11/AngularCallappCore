@@ -46,6 +46,7 @@ i {
   justify-content: center;
   align-items: center;
   margin-top: -9px;
+  position: relative;
 }
 
 #profileDetail {
@@ -73,4 +74,31 @@ i {
 
 .fa-chevron-down {
   transition: .4s;
+}
+
+#menuArea {
+  position: absolute;
+  top: 55px;
+  right: 0px;
+  transition: 0.4s;
+  height: 0px;
+  border-radius: 4px;
+}
+
+#notificationArea {
+  position: absolute;
+  top: 55px;
+  right: 40%;
+  transition: 0.4s;
+  height: 0px;
+  border-radius: 4px;
+}
+
+#chatArea {
+  position: absolute;
+  top: 55px;
+  right: 60%;
+  transition: 0.4s;
+  height: 0px;
+  border-radius: 4px;
 }
