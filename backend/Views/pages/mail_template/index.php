@@ -1,0 +1,1 @@
+<section mail_template></section>

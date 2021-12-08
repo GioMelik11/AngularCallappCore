@@ -1,0 +1,1 @@
+<section statistics_g></section>

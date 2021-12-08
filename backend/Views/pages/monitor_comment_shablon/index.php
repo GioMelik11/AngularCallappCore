@@ -1,0 +1,1 @@
+<section monitor_comment_shablon></section>

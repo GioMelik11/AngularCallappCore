@@ -1,0 +1,1 @@
+<section sms_template></section>

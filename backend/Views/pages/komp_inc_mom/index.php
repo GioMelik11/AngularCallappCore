@@ -1,0 +1,1 @@
+<section komp_inc_mom></section>

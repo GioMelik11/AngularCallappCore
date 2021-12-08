@@ -1,0 +1,1 @@
+<section in_type></section>
