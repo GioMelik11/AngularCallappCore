@@ -1,7 +1,7 @@
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: #fff !important;
-  padding: 7px 17px;
+  padding: 0px 17px;
   height: 61px;
 }
 
@@ -12,5 +12,61 @@
   height: 35px;
   width: 112px;
   display: block;
+  margin-top: 8px;
+}
 
+span {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#name {
+  font-family: 'BPG';
+}
+
+#group {
+  font-family: 'BPG2';
+  font-size: 10px;
+  color: #9C9C9C;
+}
+
+i {
+  color: #6A6969;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.fa-bell {
+  font-size: 17px;
+}
+
+.d-flex {
+  flex-direction: row;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -9px;
+}
+
+#profileDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+}
+
+#profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+#profile>img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
 }
