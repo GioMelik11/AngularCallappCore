@@ -10,3 +10,45 @@ i {
   color: white;
   font-size: 20px;
 }
+
+#collapseMenu {
+  transition: all 0.6s ease 0s;
+}
+
+@keyframes menuiconColapse {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+button[aria-expanded="true"]>.fa-bars::before {
+  content: "\f00d";
+  animation: menuiconColapse 0.7s linear 1 alternate;
+}
+
+
+@keyframes menuiconExit {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+button[aria-expanded="false"]>.fa-bars::before {
+  animation: menuiconExit 0.7s linear 1 alternate;
+}
