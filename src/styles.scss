@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.btn-check:focus+.btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: unset;
+}
+
+body {
+  background-color: #F4F3FC;
+}
