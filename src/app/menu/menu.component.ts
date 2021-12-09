@@ -33,22 +33,39 @@ export class MenuComponent implements OnInit {
       id: "1",
       name: "მთავარი",
       route: "dashboard",
-      icon: "dashboard"
+      icon: "dashboard",
+      sub: 0
     }, {
       id: "2",
       name: "შემომავალი",
       route: "incomming",
-      icon: "incomming"
+      icon: "incomming",
+      sub: 0
     }, {
       id: "3",
       name: "ცნობარები",
       route: "#",
-      icon: "ref"
+      icon: "ref",
+      sub: 1,
+      submenu: [{
+        id: "1",
+        name: "მთავარი",
+        route: "dashboard",
+        icon: "dashboard",
+        sub: 0
+      }, {
+        id: "2",
+        name: "შემომავალი",
+        route: "incomming",
+        icon: "incomming",
+        sub: 0
+      }]
     }, {
       id: "4",
       name: "ტესტ გვერდი",
       route: "test2",
-      icon: "crm"
+      icon: "crm",
+      sub: 0
     }];
 
     return data;

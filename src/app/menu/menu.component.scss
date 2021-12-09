@@ -105,14 +105,6 @@ svg{
   stroke: #3AA2FD;
 }
 
-.list-group-item:hover + svg {
-  stroke: #3AA2FD;
-}
-
-.list-group-item:hover ~ svg {
-  stroke: #3AA2FD;
-}
-
 .list-group-item.active svg {
   stroke: #3AA2FD;
 }
@@ -132,4 +124,37 @@ svg{
 
 .collapse:not(.show) p span{
   display: none;
+}
+
+.list-group-item i{
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.collapse:not(.show) p i{
+  display: none;
+}
+
+.list-group-item:hover > span > i {
+  color: #3AA2FD;
+}
+
+.list-group-item.active span > i {
+  color: #3AA2FD;
+}
+
+.list-group-item.active span > i {
+  transform:rotate(180deg);
+}
+
+.menu-item{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+.submenu{
+  position: relative;
 }
