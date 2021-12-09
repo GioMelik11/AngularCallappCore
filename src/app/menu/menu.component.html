@@ -9,7 +9,7 @@
                 <div class="list-group" id="list-tab" role="tablist">
                     <p *ngFor="let item of menuItem; index as i;" class="list-group-item list-group-item-action"
                         [ngClass]="{'active' : currentRoute == ('/'+item.route)}" data-bs-toggle="list"
-                        [routerLink]="item.sub == 0 ? item.route : ''" role="tab">
+                        [routerLink]="item.sub == 0 ? item.route : '#'" role="tab">
                         <svg viewBox="0 0 24 24" width="24" height="24">
                             <use attr.xlink:href="assets/icons/menu/menu.svg#{{item.icon}}"></use>
                         </svg>
