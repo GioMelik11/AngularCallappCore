@@ -27,6 +27,10 @@ export class MenuComponent implements OnInit {
     this.menuItem = this.getMenuItems();
   }
 
+  routePage(navigate: any) {
+    navigate != "#" ? this.router.navigate(['/' + navigate]) : "";
+  }
+
   getMenuItems() {
 
     var data = [{
@@ -70,5 +74,4 @@ export class MenuComponent implements OnInit {
 
     return data;
   }
-
 }
