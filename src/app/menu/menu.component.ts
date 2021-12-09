@@ -7,14 +7,16 @@ import { filter } from 'rxjs/operators';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit {
   @ViewChild('menu', { static: true }) menu: ElementRef<HTMLDivElement>;
   menuItem: any = new Object();
   currentRoute: any;
 
   constructor(menu: ElementRef<HTMLDivElement>, private router: Router) {
     this.menu = menu;
+  }
 
+  ngOnInit(): void {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(event => {
@@ -22,7 +24,11 @@ export class MenuComponent {
         this.currentRoute = this.currentRoute.url;
       })
 
-    this.menuItem = [{
+    this.menuItem = this.getMenuItems();
+  }
+
+  getMenuItems() {
+    var data = [{
       id: "1",
       name: "მთავარი",
       route: "dashboard",
@@ -43,6 +49,8 @@ export class MenuComponent {
       route: "test2",
       icon: "crm"
     }];
+
+    return data;
   }
 
 }
