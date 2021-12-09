@@ -2,7 +2,7 @@
 @import url(./assets/Fonts/fonts.css);
 
 .btn-check:focus+.btn,
-.btn:focus {
+.btn:focus, .form-select:focus, .form-control:focus{
   outline: 0;
   box-shadow: unset;
 }
