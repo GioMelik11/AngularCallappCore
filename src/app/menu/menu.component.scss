@@ -54,59 +54,66 @@ button[aria-expanded="false"]>.fa-bars::before {
   animation: menuiconExit 0.7s linear 1 alternate;
 }
 
-.card-body{
+.card-body {
   flex: 1 1 auto;
   padding: 1.5rem 1rem 2rem 0px;
-  min-width:20px;
+  min-width: 20px;
   width: 300px;
   background: transparent;
 }
 
-.list-group{
+.list-group {
   padding: 10px 15px 10px 9px;
 }
 
 .list-group-item {
   z-index: 2;
-  color: #fff;
   background-color: unset;
   border-color: unset;
   border: unset;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-group-item>.menu-content {
+  color: #fff;
   font-family: "BPG";
   font-size: 13px;
-  padding: 5px 0px;
   cursor: pointer;
   transition: 0.3s;
-  display: flex;
+  display: flex !important;
   align-items: center;
   gap: 17px;
 }
 
-
-svg{
+svg {
   fill: transparent;
   stroke: #fff;
   transition: 0.3s;
   min-width: 24px;
 }
 
-.list-group-item:hover {
+.list-group-item>.menu-content:hover {
   color: #3AA2FD;
 }
 
 .list-group-item.active {
-  z-index: 2;
-  color: #3AA2FD;
   background-color: unset;
   border-color: unset;
 }
 
+.list-group-item.active>.menu-content {
+  z-index: 2;
+  color: #3AA2FD;
+}
 
-.list-group-item:hover > svg {
+
+.list-group-item>.menu-content:hover>svg {
   stroke: #3AA2FD;
 }
 
-.list-group-item.active svg {
+.list-group-item.active>.menu-content>svg {
   stroke: #3AA2FD;
 }
 
@@ -115,40 +122,40 @@ svg{
   width: 0px;
 }
 
-#collapseMenu{
+#collapseMenu {
   min-width: 35px;
 }
 
-.collapse:not(.show) p{
+.collapse:not(.show) p {
   width: fit-content;
 }
 
-.collapse:not(.show) p span{
+.collapse:not(.show) p span {
   display: none;
 }
 
-.list-group-item i{
+.list-group-item i {
   font-size: 12px;
   transition: 0.3s;
 }
 
-.collapse:not(.show) p i{
+.collapse:not(.show) p i {
   display: none;
 }
 
-.list-group-item:hover > span > i {
+.list-group-item:hover>span>i {
   color: #3AA2FD;
 }
 
-.list-group-item.active span > i {
+.list-group-item.active span>i {
   color: #3AA2FD;
 }
 
-.list-group-item.active span > i {
-  transform:rotate(180deg);
+.list-group-item.active span>i {
+  transform: rotate(180deg);
 }
 
-.menu-item{
+.menu-item {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -156,6 +163,6 @@ svg{
   align-content: center;
 }
 
-.submenu{
+.submenu {
   position: relative;
 }

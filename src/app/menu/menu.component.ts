@@ -27,8 +27,12 @@ export class MenuComponent implements OnInit {
     this.menuItem = this.getMenuItems();
   }
 
-  routePage(navigate: any) {
-    navigate != "#" ? this.router.navigate(['/' + navigate]) : "";
+  routePage(navigate: any, data: any) {
+    navigate != "#" ? this.router.navigate(['/' + navigate]) : this.dropDown(data);
+  }
+
+  dropDown(item: any) {
+
   }
 
   getMenuItems() {
