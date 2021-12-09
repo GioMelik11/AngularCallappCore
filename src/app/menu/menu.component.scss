@@ -74,6 +74,8 @@ button[aria-expanded="false"]>.fa-bars::before {
   padding: 5px 0px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  gap: 10px;
 }
 
 .list-group-item>.menu-content {
@@ -143,15 +145,8 @@ svg {
   display: none;
 }
 
-.list-group-item:hover>span>i {
-  color: #3AA2FD;
-}
-
 .list-group-item.active span>i {
   color: #3AA2FD;
-}
-
-.list-group-item.active span>i {
   transform: rotate(180deg);
 }
 
@@ -163,6 +158,43 @@ svg {
   align-content: center;
 }
 
-.submenu {
+@keyframes dropdown {
+  0% {
+    height: 0px;
+  }
+
+  50% {
+    height: 20px;
+  }
+
+  100% {
+    height: 40px;
+  }
+}
+
+.list-group-item .sub-menu {
   position: relative;
+  left: 75px;
+  height: 0px;
+  display: none;
+}
+
+.sub-menu>p {
+  display: list-item;
+  color: #fff;
+  font-family: "BPG";
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0px;
+}
+
+.sub-menu>p:hover {
+  color: #3AA2FD;
+}
+
+.list-group-item.active .sub-menu {
+  height: 40px;
+  display: block;
+  animation: dropdown 0.3s linear 1 alternate;
 }

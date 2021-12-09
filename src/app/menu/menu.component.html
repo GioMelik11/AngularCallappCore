@@ -7,9 +7,9 @@
         <div class="collapse collapse-horizontal" id="collapseMenu">
             <div #menu class="card-body">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <p *ngFor="let item of menuItem; index as i;" class="list-group-item list-group-item-action"
-                        [ngClass]="{'active' : currentRoute == ('/'+item.route)}" data-bs-toggle="list"
-                        (click)="routePage(item.route,item.submenu)" role="tab" #{{item.id}}>
+                    <p *ngFor="let item of menuItem; index as i;" class="list-group-item list-group-item-action "
+                        [ngClass]="{'active' : currentRoute == ('/'+item.route),'active-sub' : item.sub > 0}" data-bs-toggle="list"
+                        (click)="routePage(item.route,item.submenu)" role="tab">
                         <span class="menu-content">
                             <svg viewBox="0 0 24 24" width="24" height="24">
                                 <use attr.xlink:href="assets/icons/menu/menu.svg#{{item.icon}}"></use>
@@ -18,6 +18,18 @@
                                 <span>{{item.name}}</span>
                                 <i class="fas fa-chevron-down" *ngIf="item.sub > 0"></i>
                             </span>
+                        </span>
+                        <span *ngIf="item.sub > 0" class="sub-menu">
+                                <p *ngFor="let sub of item.submenu; index as ii;" class="list-group-item list-group-item-action"
+                                [ngClass]="{'active' : currentRoute == ('/'+sub.route)}" data-bs-toggle="list"
+                                (click)="routePage(sub.route,sub.submenu)" role="tab" >
+                                <span class="menu-content">
+                                    <span class="menu-item">
+                                        <span>{{sub.name}}</span>
+                                        <i class="fas fa-chevron-down" *ngIf="sub.sub > 0"></i>
+                                    </span>
+                                </span>
+                            </p>
                         </span>
                     </p>
                 </div>

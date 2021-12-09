@@ -57,15 +57,13 @@ export class MenuComponent implements OnInit {
       sub: 1,
       submenu: [{
         id: "1",
-        name: "მთავარი",
-        route: "dashboard",
-        icon: "dashboard",
+        name: "ტესტ მენიუ 1",
+        route: "dashboard1",
         sub: 0
       }, {
         id: "2",
-        name: "შემომავალი",
-        route: "incomming",
-        icon: "incomming",
+        name: "ტესტ მენიუ 2",
+        route: "incomming1",
         sub: 0
       }]
     }, {
