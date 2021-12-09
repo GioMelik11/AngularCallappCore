@@ -8,7 +8,8 @@
             <div #menu class="card-body">
                 <div class="list-group" id="list-tab" role="tablist">
                     <p *ngFor="let item of menuItem; index as i;" class="list-group-item list-group-item-action"
-                        [ngClass]="{'active' : i == 0}" data-bs-toggle="list" routerLink="/{{item.route}}" role="tab">
+                        [ngClass]="{'active' : currentRoute == ('/'+item.route)}" data-bs-toggle="list"
+                        routerLink="/{{item.route}}" role="tab">
                         {{item.name}}</p>
                 </div>
             </div>
