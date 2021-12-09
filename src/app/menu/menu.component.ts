@@ -25,19 +25,23 @@ export class MenuComponent {
     this.menuItem = [{
       id: "1",
       name: "მთავარი",
-      route: "dashboard"
+      route: "dashboard",
+      icon: "dashboard"
     }, {
-      id: "1",
+      id: "2",
       name: "შემომავალი",
-      route: "incomming"
+      route: "incomming",
+      icon: "incomming"
     }, {
-      id: "1",
+      id: "3",
+      name: "ცნობარები",
+      route: "#",
+      icon: "ref"
+    }, {
+      id: "4",
       name: "ტესტ გვერდი",
-      route: "test1"
-    }, {
-      id: "1",
-      name: "ტესტ გვერდი 2",
-      route: "test2"
+      route: "test2",
+      icon: "crm"
     }];
   }
 

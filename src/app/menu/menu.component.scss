@@ -4,6 +4,7 @@
   min-width: 60px;
   padding: 12px 0px 0px 7px;
   transform: 1s;
+  max-width: 300px;
 }
 
 i {
@@ -55,14 +56,14 @@ button[aria-expanded="false"]>.fa-bars::before {
 
 .card-body{
   flex: 1 1 auto;
-  padding: 2rem 1rem 2rem 0px;
+  padding: 1.5rem 1rem 2rem 0px;
   min-width:20px;
   width: 300px;
   background: transparent;
 }
 
 .list-group{
-  padding: 10px 15px;
+  padding: 10px 15px 10px 9px;
 }
 
 .list-group-item {
@@ -73,8 +74,18 @@ button[aria-expanded="false"]>.fa-bars::before {
   border: unset;
   font-family: "BPG";
   font-size: 13px;
-  padding: 0px;
+  padding: 5px 0px;
   cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+
+svg{
+  fill: transparent;
+  stroke: #fff;
   transition: 0.3s;
 }
 
@@ -87,4 +98,38 @@ button[aria-expanded="false"]>.fa-bars::before {
   color: #3AA2FD;
   background-color: unset;
   border-color: unset;
+}
+
+
+.list-group-item:hover > svg {
+  stroke: #3AA2FD;
+}
+
+.list-group-item:hover + svg {
+  stroke: #3AA2FD;
+}
+
+.list-group-item:hover ~ svg {
+  stroke: #3AA2FD;
+}
+
+.list-group-item.active svg {
+  stroke: #3AA2FD;
+}
+
+.collapse:not(.show) {
+  display: block;
+  width: 0px;
+}
+
+#collapseMenu{
+  min-width: 35px;
+}
+
+.collapse:not(.show) p{
+  width: fit-content;
+}
+
+.collapse:not(.show) p span{
+  display: none;
 }
