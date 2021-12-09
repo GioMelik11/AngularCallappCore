@@ -1,12 +1,21 @@
 <div class="menucontent">
-    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu"
-        aria-expanded="false" aria-controls="collapseMenu">
+    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu" aria-expanded="false"
+        aria-controls="collapseMenu">
         <i class="fas fa-bars"></i>
     </button>
     <div>
         <div class="collapse collapse-horizontal" id="collapseMenu">
-            <div class="card-body" style="width: 300px;background: transparent;">
-
+            <div #menu class="card-body" style="min-width:20px;width: 300px;background: transparent;">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-bs-toggle="list"
+                        routerLink="/dashboard" role="tab">მთავარი</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" routerLink="/incomming"
+                        role="tab">შემომავალი</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" routerLink="/incomming1"
+                        role="tab">test</a>
+                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" routerLink="/incommin2"
+                        role="tab">test2</a>
+                </div>
             </div>
         </div>
     </div>

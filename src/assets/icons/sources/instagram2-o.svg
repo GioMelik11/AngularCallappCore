@@ -1,0 +1,20 @@
+<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="42" height="42" rx="10" fill="#C4C4C4"/>
+<path d="M40.5 34.5C40.5 42.232 32.3741 41.5 20.5 41.5C8.62588 41.5 2 41.232 2 33.5C2 25.768 8.62588 20 20.5 20C32.3741 20 40.5 26.768 40.5 34.5Z" fill="#FF0000"/>
+<path d="M41 8.9999C41 18.1126 34.8071 24.9999 21 24.9999C7.19288 24.9999 0.5 18.6126 0.5 9.49994C0.5 0.38724 7.19288 0.999897 21 0.999897C34.8071 0.999897 41 -0.112801 41 8.9999Z" fill="#2F00F5"/>
+<path d="M42 24.5C42 31.4036 35.5833 37 21.5 37C7.41674 37 0 31.4036 0 24.5C0 17.5964 7.41674 12 21.5 12C35.5833 12 42 17.5964 42 24.5Z" fill="#C7006B"/>
+<g filter="url(#filter0_b)">
+<rect width="42" height="42" rx="10" fill="white" fill-opacity="0.14"/>
+</g>
+<path d="M26 11H16C13.2386 11 11 13.2386 11 16V26C11 28.7614 13.2386 31 16 31H26C28.7614 31 31 28.7614 31 26V16C31 13.2386 28.7614 11 26 11Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.0002 20.3698C25.1236 21.2021 24.9815 22.052 24.594 22.7988C24.2065 23.5456 23.5933 24.1512 22.8418 24.5295C22.0903 24.9077 21.2386 25.0394 20.408 24.9057C19.5773 24.7721 18.81 24.3799 18.215 23.785C17.6201 23.1901 17.2279 22.4227 17.0943 21.592C16.9606 20.7614 17.0923 19.9097 17.4705 19.1582C17.8488 18.4067 18.4544 17.7936 19.2012 17.4061C19.948 17.0186 20.7979 16.8764 21.6302 16.9998C22.4791 17.1257 23.265 17.5213 23.8719 18.1281C24.4787 18.735 24.8743 19.5209 25.0002 20.3698Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.5 15.5H26.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_b" x="-13" y="-13" width="68" height="68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="6.5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+</defs>
+</svg>

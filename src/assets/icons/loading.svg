@@ -1,0 +1,154 @@
+<svg  width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+
+<!-- LOADING 1 -->
+
+<svg id="load1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: visible;" width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+<defs>
+  <filter id="ldio-qt2mq2v4mee-filter" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2.4000000000000004"></feGaussianBlur>
+    <feComponentTransfer result="cutoff">
+      <feFuncA type="table" tableValues="0 0 0 0 0 0 1 1 1 1 1"></feFuncA>
+    </feComponentTransfer>
+  </filter>
+</defs>
+<g filter="url(#ldio-qt2mq2v4mee-filter)"><g transform="translate(50 50)">
+<g>
+  <circle cx="25" cy="0" r="5" fill="#e9ab42">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="8.333333333333334s" repeatCount="indefinite" begin="-0.12s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="8.333333333333334s" repeatCount="indefinite" begin="0s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="25" cy="0" r="5" fill="#15a54e">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="4.166666666666667s" repeatCount="indefinite" begin="-0.105s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="4.166666666666667s" repeatCount="indefinite" begin="-0.015s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="25" cy="0" r="5" fill="#bd4e9c">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="2.7777777777777777s" repeatCount="indefinite" begin="-0.09s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="2.7777777777777777s" repeatCount="indefinite" begin="-0.03s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="25" cy="0" r="5" fill="#e02548">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="2.0833333333333335s" repeatCount="indefinite" begin="-0.075s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="2.0833333333333335s" repeatCount="indefinite" begin="-0.045s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="25" cy="0" r="5" fill="#3a559e">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1.6666666666666667s" repeatCount="indefinite" begin="-0.06s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.6666666666666667s" repeatCount="indefinite" begin="-0.06s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="25" cy="0" r="5" fill="#2aa0da">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1.3888888888888888s" repeatCount="indefinite" begin="-0.045s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.3888888888888888s" repeatCount="indefinite" begin="-0.075s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="25" cy="0" r="5" fill="#78489b">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1.1904761904761905s" repeatCount="indefinite" begin="-0.03s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.1904761904761905s" repeatCount="indefinite" begin="-0.09s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="25" cy="0" r="5" fill="#1d9693">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1.0416666666666667s" repeatCount="indefinite" begin="-0.015s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.0416666666666667s" repeatCount="indefinite" begin="-0.105s"></animateTransform>
+</g>
+</g></g>
+</svg>
+
+
+
+
+
+
+
+
+<!-- LOADING 2 -->
+
+
+<svg id="load2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(241, 242, 243); display: block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+<defs>
+  <filter id="ldio-h7empy10oe-filter" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="0.8"></feGaussianBlur>
+    <feComponentTransfer result="cutoff">
+      <feFuncA type="table" tableValues="0 0 0 0 0 0 1 1 1 1 1"></feFuncA>
+    </feComponentTransfer>
+  </filter>
+</defs>
+<g filter="url(#ldio-h7empy10oe-filter)"><g transform="translate(50 50)">
+<g>
+  <circle cx="11" cy="0" r="5" fill="#e9ab42">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="1.2;2.8;1.2" dur="7.692307692307692s" repeatCount="indefinite" begin="-0.13s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="7.692307692307692s" repeatCount="indefinite" begin="0s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="11" cy="0" r="5" fill="#15a54e">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="1.2;2.8;1.2" dur="3.846153846153846s" repeatCount="indefinite" begin="-0.11375s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="3.846153846153846s" repeatCount="indefinite" begin="-0.01625s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="11" cy="0" r="5" fill="#bd4e9c">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="1.2;2.8;1.2" dur="2.564102564102564s" repeatCount="indefinite" begin="-0.0975s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="2.564102564102564s" repeatCount="indefinite" begin="-0.0325s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="11" cy="0" r="5" fill="#e02548">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="1.2;2.8;1.2" dur="1.923076923076923s" repeatCount="indefinite" begin="-0.08125s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.923076923076923s" repeatCount="indefinite" begin="-0.04875s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="11" cy="0" r="5" fill="#3a559e">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="1.2;2.8;1.2" dur="1.5384615384615383s" repeatCount="indefinite" begin="-0.065s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.5384615384615383s" repeatCount="indefinite" begin="-0.065s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="11" cy="0" r="5" fill="#2aa0da">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="1.2;2.8;1.2" dur="1.282051282051282s" repeatCount="indefinite" begin="-0.04875s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.282051282051282s" repeatCount="indefinite" begin="-0.08125s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="11" cy="0" r="5" fill="#78489b">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="1.2;2.8;1.2" dur="1.0989010989010988s" repeatCount="indefinite" begin="-0.0325s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.0989010989010988s" repeatCount="indefinite" begin="-0.0975s"></animateTransform>
+</g>
+</g><g transform="translate(50 50)">
+<g>
+  <circle cx="11" cy="0" r="5" fill="#1d9693">
+    <animate attributeName="r" keyTimes="0;0.5;1" values="1.2;2.8;1.2" dur="0.9615384615384615s" repeatCount="indefinite" begin="-0.01625s"></animate>
+  </circle>
+  <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="0.9615384615384615s" repeatCount="indefinite" begin="-0.11375s"></animateTransform>
+</g>
+</g></g>
+</svg>
+
+
+
+</svg>

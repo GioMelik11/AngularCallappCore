@@ -1,0 +1,8 @@
+<svg  fill="none" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+
+<symbol id="sendmessage" viewBox="0 0 24 24" style="overflow: visible; stroke:var(--stroke)">
+<path d="M14.6666 1.33325L9.99992 14.6666L7.33325 8.66659L1.33325 5.99992L14.6666 1.33325Z" stroke="#f311d8"  fill="#f311d86f" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6666 1.33325L7.33325 8.66659" stroke="#f311d8" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+</svg>

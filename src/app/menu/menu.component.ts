@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  @ViewChild('menu', { static: true }) menu: ElementRef<HTMLDivElement>;
 
-  constructor() { }
+  constructor(menu: ElementRef<HTMLDivElement>) {
+    this.menu = menu;
+  }
 
   ngOnInit(): void {
   }
