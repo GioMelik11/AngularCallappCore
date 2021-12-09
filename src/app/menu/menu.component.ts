@@ -28,6 +28,7 @@ export class MenuComponent implements OnInit {
   }
 
   getMenuItems() {
+
     var data = [{
       id: "1",
       name: "მთავარი",
