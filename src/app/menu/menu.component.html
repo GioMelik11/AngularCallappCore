@@ -5,16 +5,11 @@
     </button>
     <div>
         <div class="collapse collapse-horizontal" id="collapseMenu">
-            <div #menu class="card-body" style="min-width:20px;width: 300px;background: transparent;">
+            <div #menu class="card-body">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" data-bs-toggle="list"
-                        routerLink="/dashboard" role="tab">მთავარი</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" routerLink="/incomming"
-                        role="tab">შემომავალი</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" routerLink="/incomming1"
-                        role="tab">test</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" routerLink="/incommin2"
-                        role="tab">test2</a>
+                    <p *ngFor="let item of menuItem; index as i;" class="list-group-item list-group-item-action"
+                        [ngClass]="{'active' : i == 0}" data-bs-toggle="list" routerLink="/{{item.route}}" role="tab">
+                        {{item.name}}</p>
                 </div>
             </div>
         </div>
