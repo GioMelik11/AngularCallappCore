@@ -13,16 +13,6 @@
     }
   }
 
-  @keyframes animatemodal2 {
-    0% {
-      width: 0vw;
-    }
-  
-    100% {
-        width: 85vw;
-    }
-  }
-
 .modal-content{
     position: fixed;
     background-color: #F4F3FC;
@@ -42,10 +32,6 @@
     top: 58px;
     border: unset;
     animation: animatemodal 0.5s  1;
-}
-
-.modal[aria-hidden="true"] .modal-content{
-    animation: animatemodal 0.2s  1 alternate-reverse;
 }
 
 .modal.show {

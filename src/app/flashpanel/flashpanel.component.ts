@@ -51,7 +51,17 @@ export class FlashpanelComponent implements OnInit {
   }
 
   dynamicGetdialogContent(element: HTMLElement, source: number) {
-    element.getAttribute("aria-hidden") == "true" ? this.showDialog(element) : this.hideDialog(element);
+    switch (element.getAttribute("aria-hidden")) {
+      case "true":
+        this.showDialog(element);
+        this.generateContent(element.children[0].children[0]);
+        break;
+      case "false":
+        this.hideDialog(element);
+        break;
+      default:
+        break;
+    }
   }
 
   showDialog(element: HTMLElement) {
@@ -67,8 +77,8 @@ export class FlashpanelComponent implements OnInit {
     element.setAttribute("style", "display: none;");
   }
 
-  generateContent() {
-
+  generateContent(element: any) {
+    element.innerHTML = "No Data";
   }
 
 }
