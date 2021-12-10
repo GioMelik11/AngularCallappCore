@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AuthComponent } from './auth/auth.component';
+import { FlashpanelComponent } from './flashpanel/flashpanel.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AuthComponent } from './auth/auth.component';
     PageNotFoundComponent,
     HeaderComponent,
     MenuComponent,
-    AuthComponent
+    AuthComponent,
+    FlashpanelComponent
   ],
   imports: [
     BrowserModule,

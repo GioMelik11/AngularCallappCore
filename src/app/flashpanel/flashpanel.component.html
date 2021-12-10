@@ -1,0 +1,8 @@
+<section>
+    <div *ngFor="let item of this.panelItems" (click)="showHidePanel(item.source_id)">
+        <span>{{item.count_queue}}</span>
+        <svg viewBox="0 0 24 24" width="32" height="32">
+            <use attr.xlink:href="assets/icons/sources/source.svg#{{item.icon}}"></use>
+        </svg>
+    </div>
+</section>

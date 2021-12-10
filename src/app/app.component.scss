@@ -3,3 +3,12 @@
     width: 100%;
     justify-content: space-around;
 }
+
+.routebody > div{
+    width: 100%;
+}
+
+.routebody{
+    display: flex;
+    justify-content: space-between;
+}
