@@ -1,5 +1,5 @@
 <section>
-    <div *ngFor="let item of this.panelItems" (click)="showHidePanel(item.source_id)">
+    <div *ngFor="let item of this.panelItems" [id]="item.icon" flash-panel-item="true" aria-show="false" (click)="showHidePanel(item.source_id,item.icon)">
         <span>{{item.count_queue}}</span>
         <svg viewBox="0 0 24 24" width="32" height="32">
             <use attr.xlink:href="assets/icons/sources/source.svg#{{item.icon}}"></use>

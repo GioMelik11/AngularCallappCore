@@ -1,3 +1,10 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .menucontent {
   background: #354FA6;
   height: 100vh;
@@ -200,5 +207,3 @@ svg {
   display: block;
   animation: dropdown 0.3s linear 1 alternate;
 }
-
-

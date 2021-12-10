@@ -1,3 +1,10 @@
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: #fff !important;
@@ -105,4 +112,3 @@ i {
 #chatArea {
   right: 18%;
 }
-
