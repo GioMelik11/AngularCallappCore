@@ -11,7 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AuthComponent } from './auth/auth.component';
 import { FlashpanelComponent } from './flashpanel/flashpanel.component';
-import { ModalComponent } from './modal/modal.component';
+import { ModalComponent } from './flashpanel/modal/modal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({

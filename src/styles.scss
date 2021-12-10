@@ -2,7 +2,9 @@
 @import url(./assets/Fonts/fonts.css);
 
 .btn-check:focus+.btn,
-.btn:focus, .form-select:focus, .form-control:focus{
+.btn:focus,
+.form-select:focus,
+.form-control:focus {
   outline: 0;
   box-shadow: unset;
 }
@@ -10,6 +12,3 @@
 body {
   background-color: #F4F3FC;
 }
-
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';

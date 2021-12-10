@@ -1,0 +1,39 @@
+.modal {
+  backdrop-filter: blur(2px);
+}
+
+
+@keyframes animatemodal {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.modal-content {
+  position: fixed;
+  background-color: #F4F3FC;
+  right: 70px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  min-width: 317px;
+  gap: 10px;
+  grid-auto-flow: row dense;
+  height: 75vh;
+  overflow: overlay;
+  max-width: 85vw;
+  grid-template-columns: repeat(auto-fit, minmax(610px, 1fr));
+  z-index: 1;
+  user-select: none;
+  top: 58px;
+  border: unset;
+  animation: animatemodal 0.5s 1;
+}
+
+.modal.show {
+  background-color: rgb(135 135 135 / 47%);
+}

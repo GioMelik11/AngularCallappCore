@@ -1,31 +1,35 @@
-section{
-    background: #fff;
-    height: 93.4vh;
-    min-width: 60px;
-    display: flex;
-    align-items: center;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    z-index: 1056;
-    position: relative;
+.modal {
+  background-color: red;
 }
 
-div{
-    position: relative;
-    cursor: pointer;
+section {
+  background: #fff;
+  height: 93.4vh;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1056;
+  position: relative;
 }
 
-span{
-    position: absolute;
-    color: #fff;
-    padding: 2px 5px;
-    font-size: 10px;
-    font-family: "BPG2";
-    border-radius: 21px;
-    background-color: #f52222;
-    border: 1px solid #fff;
-    right: -8px;
-    top: -11px;
+div {
+  position: relative;
+  cursor: pointer;
+}
+
+span {
+  position: absolute;
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 10px;
+  font-family: "BPG2";
+  border-radius: 21px;
+  background-color: #f52222;
+  border: 1px solid #fff;
+  right: -8px;
+  top: -11px;
 }

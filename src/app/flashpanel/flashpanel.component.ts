@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from './modal/modal.component';
 
 @Component({
   selector: 'app-flashpanel',
@@ -7,11 +7,11 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./flashpanel.component.scss']
 })
 export class FlashpanelComponent implements OnInit {
+  @ViewChild(ModalComponent, { read: ElementRef }) private footerElementRef: ElementRef;
   panelItems: any = new Object();
 
-  constructor(config: NgbModalConfig, private modalService: NgbModal) {
-    config.backdrop = 'static';
-    config.keyboard = false;
+  constructor(private modalToggle: ElementRef) {
+    this.footerElementRef = modalToggle;
   }
 
   ngOnInit(): void {
@@ -40,9 +40,41 @@ export class FlashpanelComponent implements OnInit {
     return data;
   }
 
-  showHidePanel(content: any, source: number) {
-    this.modalService.open(content);
+  showHidePanel(source: number) {
+    var element = this.footerElementRef.nativeElement.children[0];
+    this.dynamicGetdialogContent(element, source);
 
   }
-}
 
+  dynamicGetdialogContent(element: HTMLElement, source: number) {
+    switch (element.getAttribute("aria-hidden")) {
+      case "true":
+        this.showDialog(element);
+        this.generateContent(element.children[0].children[0]);
+        break;
+      case "false":
+        this.hideDialog(element);
+        break;
+      default:
+        break;
+    }
+  }
+
+  showDialog(element: HTMLElement) {
+    element.setAttribute("class", "modal show");
+    element.setAttribute("aria-modal", "true");
+    element.setAttribute("aria-hidden", "false");
+    element.setAttribute("style", "display: block;");
+  }
+
+  hideDialog(element: HTMLElement) {
+    element.setAttribute("class", "modal");
+    element.setAttribute("aria-hidden", "true");
+    element.setAttribute("style", "display: none;");
+  }
+
+  generateContent(element: any) {
+    element.innerHTML = "No Data";
+  }
+
+}
