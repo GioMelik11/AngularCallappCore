@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-flashpanel',
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flashpanel.component.scss']
 })
 export class FlashpanelComponent implements OnInit {
-
+  @ViewChild(ModalComponent, { read: ElementRef }) private footerElementRef: ElementRef;
   panelItems: any = new Object();
-  constructor() { }
+
+  constructor(private modalToggle: ElementRef) {
+    this.footerElementRef = modalToggle;
+  }
 
   ngOnInit(): void {
     this.panelItems = this.getPanelItems();
@@ -37,7 +41,20 @@ export class FlashpanelComponent implements OnInit {
   }
 
   showHidePanel(source: number) {
-    console.log(source)
+    var element = this.footerElementRef.nativeElement.children[0];
+    if (element.getAttribute("aria-hidden") == "true") {
+      element.setAttribute("class", "modal show");
+      element.setAttribute("aria-modal", "true");
+      element.setAttribute("aria-hidden", "false");
+      element.setAttribute("style", "display: block;");
+    } else {
+      element.setAttribute("class", "modal");
+      element.setAttribute("aria-hidden", "true");
+      element.setAttribute("style", "display: none;");
+    }
+
+
+
   }
 
 }

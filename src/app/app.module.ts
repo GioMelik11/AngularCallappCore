@@ -11,6 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AuthComponent } from './auth/auth.component';
 import { FlashpanelComponent } from './flashpanel/flashpanel.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FlashpanelComponent } from './flashpanel/flashpanel.component';
     HeaderComponent,
     MenuComponent,
     AuthComponent,
-    FlashpanelComponent
+    FlashpanelComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

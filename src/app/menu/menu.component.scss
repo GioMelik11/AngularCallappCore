@@ -5,6 +5,8 @@
   padding: 12px 0px 0px 7px;
   transform: 1s;
   max-width: 300px;
+  z-index: 1057;
+  position: relative;
 }
 
 i {
@@ -198,3 +200,5 @@ svg {
   display: block;
   animation: dropdown 0.3s linear 1 alternate;
 }
+
+
