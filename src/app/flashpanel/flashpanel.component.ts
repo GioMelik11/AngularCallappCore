@@ -42,8 +42,12 @@ export class FlashpanelComponent implements OnInit {
 
   showHidePanel(source: number) {
     var element = this.footerElementRef.nativeElement.children[0];
+    this.hideDialog(element);
 
-    this.dynamicGetdialogContent(element, source);
+    setTimeout(() => {
+      this.dynamicGetdialogContent(element, source);
+    }, 100);
+
   }
 
   dynamicGetdialogContent(element: HTMLElement, source: number) {
@@ -61,6 +65,10 @@ export class FlashpanelComponent implements OnInit {
     element.setAttribute("class", "modal");
     element.setAttribute("aria-hidden", "true");
     element.setAttribute("style", "display: none;");
+  }
+
+  generateContent() {
+
   }
 
 }
