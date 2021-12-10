@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   @ViewChild('notificationAreaContent', { static: true }) notificationArea: ElementRef<HTMLDivElement>;
   @ViewChild('chatAreaContent', { static: true }) chatArea: ElementRef<HTMLDivElement>;
   contentStyle: any = new Object();
+  userData: any = new Object();
 
   constructor(dropdown: ElementRef<HTMLElement>, divElement: ElementRef<HTMLDivElement>) {
     this.dropdownChange = dropdown;
@@ -25,7 +26,18 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.userData = this.gerUserData();
+  }
 
+  gerUserData() {
+
+    var data = {
+      name: "ადმინისტრატორი",
+      group: "ადმინისტრატორი",
+      image: "../../assets/images/no-image.png"
+    }
+
+    return data;
   }
 
   ShowHideMenu() {
