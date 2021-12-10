@@ -42,19 +42,25 @@ export class FlashpanelComponent implements OnInit {
 
   showHidePanel(source: number) {
     var element = this.footerElementRef.nativeElement.children[0];
-    if (element.getAttribute("aria-hidden") == "true") {
-      element.setAttribute("class", "modal show");
-      element.setAttribute("aria-modal", "true");
-      element.setAttribute("aria-hidden", "false");
-      element.setAttribute("style", "display: block;");
-    } else {
-      element.setAttribute("class", "modal");
-      element.setAttribute("aria-hidden", "true");
-      element.setAttribute("style", "display: none;");
-    }
 
+    this.dynamicGetdialogContent(element, source);
+  }
 
+  dynamicGetdialogContent(element: HTMLElement, source: number) {
+    element.getAttribute("aria-hidden") == "true" ? this.showDialog(element) : this.hideDialog(element);
+  }
 
+  showDialog(element: HTMLElement) {
+    element.setAttribute("class", "modal show");
+    element.setAttribute("aria-modal", "true");
+    element.setAttribute("aria-hidden", "false");
+    element.setAttribute("style", "display: block;");
+  }
+
+  hideDialog(element: HTMLElement) {
+    element.setAttribute("class", "modal");
+    element.setAttribute("aria-hidden", "true");
+    element.setAttribute("style", "display: none;");
   }
 
 }
